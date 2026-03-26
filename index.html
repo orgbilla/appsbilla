@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrgBilla — Simple Apps, Honestly Priced</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif;
+            background: #FAFAFA;
+            color: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+            max-width: 600px;
+        }
+        header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            margin-top: 12px;
+            font-size: 18px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .apps {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+            max-width: 640px;
+            width: 100%;
+            padding: 0 20px 60px;
+        }
+        .app-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .app-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .app-card .icon { font-size: 36px; margin-bottom: 12px; }
+        .app-card h3 { font-size: 18px; font-weight: 600; }
+        .app-card .tagline { font-size: 14px; color: #666; margin-top: 4px; }
+        .app-card .price { font-size: 13px; color: #22c55e; font-weight: 600; margin-top: 8px; }
+        .app-card .links { margin-top: 12px; font-size: 13px; }
+        .app-card .links a { color: #3b82f6; text-decoration: none; margin-right: 16px; }
+        .app-card .links a:hover { text-decoration: underline; }
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+        }
+        footer a { color: #999; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OrgBilla</h1>
+        <p>Simple apps, honestly priced. No subscriptions. No ads. Your data stays on your device.</p>
+    </header>
+
+    <div class="apps">
+        <div class="app-card">
+            <div class="icon">💗</div>
+            <h3>ContractionTimer</h3>
+            <div class="tagline">Time contractions. See the pattern. Know when to go.</div>
+            <div class="price">Free</div>
+            <div class="links">
+                <a href="contraction-timer-privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+
+        <!-- More apps added here as they ship -->
+    </div>
+
+    <footer>
+        <p>&copy; 2026 OrgBilla. All rights reserved.</p>
+        <p style="margin-top: 8px;">Contact: <a href="mailto:founder@orgbilla.com">founder@orgbilla.com</a></p>
+    </footer>
+</body>
+</html>
